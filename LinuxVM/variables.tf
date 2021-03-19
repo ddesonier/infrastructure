@@ -10,7 +10,7 @@ variable "location" {
 variable "vmsize" { 
   description = "Vm Selection "
   default = "Standard_D4s_v4"
-}
+} 
 
 variable "tag" { 
   description = "Environment Tag"
@@ -20,3 +20,14 @@ variable "vmname" {
   description = "Name of VM"
   default = "MyVM"
 }
+
+variable "hostname" { 
+  description = "VM Hostname"
+  default = "linuxlabvm"
+}
+
+variable "username" { 
+  description = "Username"
+  default = "ddesonier"
+}
+
