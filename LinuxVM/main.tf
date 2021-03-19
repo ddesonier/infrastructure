@@ -163,12 +163,12 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
     source_image_reference {
         publisher = "Canonical"
         offer     = "UbuntuServer"
-        sku       = "18.04-LTS"
+        sku       = "20.04-LTS"
         version   = "latest"
-    }
+    } 
 
-    computer_name  = "myLinuxvm"
-    admin_username = "ddesonier"
+    computer_name  = var.hostname
+    admin_username = var.username
     disable_password_authentication = true
 
     admin_ssh_key {
